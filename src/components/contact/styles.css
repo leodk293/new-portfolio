@@ -1,0 +1,106 @@
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 85rem;
+    justify-content: space-between;
+    margin: 5rem auto;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.goals > h1 {
+    color: #fff;
+}
+
+.goals > p {
+    width: 30rem;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #dadada;
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.social-networks svg{
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+}
+
+.social-networks svg:hover{
+    transform: translateX(10px);
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-container form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 40rem;
+    outline: none;
+    border: 1px solid #f1f1f13b;
+    border-radius: 5px;
+    background-color: #18191e;
+    padding: 10px;
+    font-size: 15px;
+    color: #f1f1f1;
+}
+
+.contact-container input::placeholder {
+    color: #f1f1f1b4;
+}
+
+.contact-container textarea::placeholder {
+    color: #f1f1f1b4;
+}
+
+.contact-container label {
+    color: #fff;
+}
+
+.contact-container form button {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #f1f1f1;
+    background-color: rgba(255, 166, 0, 0.83);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 60px;
+        width: 90%;
+        margin: 2rem 1rem;
+    }
+
+    .goals > p {
+        width: 100%;
+    }
+
+    .social-networks{
+        justify-content: center;
+    }
+
+    .contact-container input, .contact-container textarea {
+        width: 100%;
+    }
+}

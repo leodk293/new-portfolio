@@ -1,0 +1,110 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 5rem;
+    width: 70rem;
+}
+
+.about-container img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.about-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-text p {
+    width: 40rem;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.experience,
+.exp {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.exp {
+    flex-direction: row;
+    gap: 30px;
+}
+
+.exp button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #d5d5d5;
+    font-size: 18px;
+}
+
+.exp button:hover {
+    color: #fff;
+}
+
+.skills-list {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.ptn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.blue-line {
+    border: 1px solid rgb(209, 149, 9);
+    background-color: rgb(209, 149, 9);
+    height: 3px;
+    width: 50px;
+}
+
+.grow-certif {
+    width: 110px;
+}
+
+.grow-edu {
+    width: 80px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 5px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text p {
+        width: 100%;
+    }
+
+    .about-container {
+        width: 100%;
+        margin: 50px 20px;
+    }
+
+    .about-container img {
+        width: 85%;
+        height: auto;
+    }
+}

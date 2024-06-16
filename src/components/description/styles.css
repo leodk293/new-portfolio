@@ -1,0 +1,45 @@
+.des-container {
+    margin: 10rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75rem;
+    border: 1px solid #b2aeae8b;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+.des-container .pattern {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.des-container .pattern h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.des-container .pattern p {
+    color: #acaaaa;
+}
+
+@media (max-width: 768px) {
+    .des-container {
+        flex-direction: column;
+        width: 90%;
+        margin: 5rem 1rem;
+        padding: 20px;
+    }
+
+    .des-container .pattern h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .des-container .pattern p {
+        text-align: center;
+    }
+}

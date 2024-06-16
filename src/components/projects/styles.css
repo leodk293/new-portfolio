@@ -1,0 +1,84 @@
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.projects-container > h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.categories button {
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #f1f1f1cb;
+    background-color: transparent;
+    border-radius: 40px;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    transition: background-color 500ms ease-in-out, color 450ms ease-in-out;
+}
+
+.categories button:hover{
+    background-color: #fff;
+    color: #111;
+}
+
+.categories > :nth-child(1) {
+    width: 80px;
+}
+
+.categories > :nth-child(2) {
+    width: 120px;
+}
+
+.categories > :nth-child(3) {
+    width: 130px;
+}
+
+.creations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.active {
+    border-color: purple;
+}
+
+@media (max-width: 768px) {
+    .projects-container{
+        padding: 8px;
+    }
+
+    .categories button {
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+
+    .creations {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .projects-container > h1 {
+        font-size: 30px;
+    }
+
+    .categories > :nth-child(1),
+    .categories > :nth-child(2),
+    .categories > :nth-child(3) {
+        width: 100%;
+    }
+}

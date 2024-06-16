@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 4rem auto;
+}
+
+footer > :nth-child(1) {
+    width: 100%;
+    background-color: #f1f1f113;
+    padding: 1px;
+}
+
+footer > :nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    width: 82rem;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    footer > :nth-child(2) {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #f1f1f17e;
+    padding: 20px;
+}
+
+.nav-bar button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-bar h1 {
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.nav-bar nav {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    gap: 20px;
+}
+
+.nav-bar .row{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar svg{
+    display: none;
+    object-fit: cover;
+    align-self: center;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #abaaaa;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.show-links{
+    display: block;
+}
+
+@media screen and (max-width: 900px){
+    .nav-bar{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .nav-bar svg{
+        display: block;
+    }
+
+    .nav-bar .row{
+        justify-content: space-between;
+    }
+
+    .nav-bar nav{
+        display: none;
+    }
+    
+}
